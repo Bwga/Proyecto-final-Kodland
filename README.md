@@ -5,8 +5,8 @@ Proyecto final Kodland
 >Eco calculadora
 
 ## Bibliotecas:
->
->
+>Flask
+>Jinja
 
 ## Referencias ùtiles:
 >https://github.com/Lucky-Martin/eco-calculator.git
