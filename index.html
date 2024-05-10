@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 70px; text-align: center;">Calculadora de emisiones</h1>
+    <h2 style="color: rgb(72, 72, 72); font-size: 40px;">¿Alguna vez te has preguntado cuànto CO2 se emite por cada tipo de residuo?</h2>
+    <p style ="color: rgb(101, 101, 101); font-size: 25px;">Pues esta calculadora simple y sencilla te mostrarà la cantidad de emisiòn de CO2 que se genera a causa de los diferentes resiuos que desechamos diariamente. Este proyecto ayudarà a ver realmente lo mucho que contaminamos aunque parezcamos insignificantes a comparaciòn del mundo y puede lograr que reflexionemos sobre nuestras acciones, llegando a generar un cambio en nosotros.</p>
+    <h3 style ="font-size: 27px;">Es por eso que he creado una calculadoa que puede operar y analizar la cantidad de residuos (en kg) que ingreses y lo convierte a su equivalente en CO2 </h3>
+    <form method="post" action="{{ url_for('calcular_forma')}}">
+        <label for="Plastico" style ="font-size: 25px;">Plastico
+            <input type="text" name = "Plastico" id = "Plastico" placeholder="Introduzca la cantidad de plastico" required style ="font-size: 20px;">
+        </label>
+        <label for="Vidrio" style ="font-size: 25px;">Vidrio
+            <input type="text" name = "Vidrio" id = "Vidrio" placeholder="Introduzca la cantidad de vidrio" required style ="font-size: 20px;">
+        </label>
+        <label for="Papel" style ="font-size: 25px;">Papel
+            <input type="text" name = "Papel" id = "Papel" placeholder="Introduzca la cantidad de papel" required style ="font-size: 20px;"> 
+        </label>
+        <button type = "submit">Calcular</button>
+    </form>
+    <h1>{{Resultado}} kg de CO2</h1>
+
+</body>
+</html>
